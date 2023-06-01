@@ -1,0 +1,72 @@
+---
+title: "ex-6-01"
+format: html
+editor: visual
+---
+
+# Setup
+
+Run this first!
+
+```{r}
+library(tidyverse)
+library(openintro)
+```
+
+Like yesterday, we'll be working with the `acs12` dataset for all of these questions.
+
+# Creating new variables exercise
+
+## Q1
+
+Create a version of `acs12` with a new variable called `long_commute` with the value "yes" if a respondent commutes more than 30 minutes to work and "no" otherwise.
+
+```{r}
+
+```
+
+Give this new dataset a name (aka, save it as an object). Then look at it in the data viewer (click its name in the "Environment" panel). Does it look like your new variable worked as you expected?
+
+## Q2
+
+Create a version of `acs12` with a new variable called `collegeplus`. It should have the value `TRUE` if someone has a college or graduate school degree and `FALSE` if not.
+
+```{r}
+
+```
+
+Check your work by creating a table that shows you if your new variable maps onto the old variable in the way you expect.
+
+```{r}
+
+```
+
+# Extra credit
+
+Create a new variable that indicates whether someone works a. not at all (0 work hours), b. part time (1-30 hours), c. full time (30-50 hours), or d. too much (50+ hours). Check the data to see if it worked correctly.
+
+```{r}
+
+```
+
+Create a new variable that indicates whether someone is an English-speaking citizen, a non-English speaking citizen, an English-speaking non-citizen, or a non-English speaking non-citizen. Check the data to see if it worked correctly.
+
+```{r}
+
+```
+
+Do the same thing as above, but this time use `|>` to provide the `acs12` dataset to the function
+
+```{r}
+
+```
+
+Using pipes (`|>`), create a variable that indicates whether someone is a married woman, unmarried woman, married man, or unmarried man, then remove all minors (less than 18 years old) from the dataset. Check your work using tables, summary statistics, and/or by looking at the data frame. *This one is challenging!*
+
+```{r}
+
+```
+
+# Submit
+
+As usual, submit your work by committing your changes and then pushing to github! Please submit before class on Monday 6-5.
